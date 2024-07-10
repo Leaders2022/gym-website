@@ -13,13 +13,13 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Neogym</title>
+  <title>Polos Gym</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{% url 'index' %}">
             <span>
-              Neogym
+          Polos Gym
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,17 +48,17 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="why.html"> Why us </a>
+                  <a class="nav-link" href="{% url 'why' %}"> Why us </a>
                 </li>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="trainer.html"> trainers</a>
+                  <a class="nav-link" href="{% url 'trainer' %}"> trainers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html"> Contact Us</a>
+                  <a class="nav-link" href="{% url 'contact' %}"> Contact Us</a>
                 </li>
               </ul>
               <div class="user_option">
@@ -90,14 +90,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-1.png" alt="">
+                <img src="{% static 'images/u-1.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   QUALITY EQUIPMENT
                 </h5>
                 <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  We have quality equipment and our cleanliness standard is top-notch
                 </p>
               </div>
             </div>
@@ -105,14 +105,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-4.png" alt="">
+                <img src="{% static 'images/u-4.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   NUTRITION
                 </h5>
                 <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                 Get professional and personalized nutritional guidance.
                 </p>
               </div>
             </div>
@@ -120,14 +120,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-2.png" alt="">
+                <img src="{% static 'images/u-2.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   HEALTHY DIET PLAN
                 </h5>
                 <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  Get access to professional healthy diet plans.
                 </p>
               </div>
             </div>
@@ -135,14 +135,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="box">
               <div class="img-box">
-                <img src="images/u-3.png" alt="">
+                <img src="{% static 'images/u-3.png' %}" alt="">
               </div>
               <div class="detail-box">
                 <h5>
                   SPORT TRAINING
                 </h5>
                 <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  Join our sports training programs. Football, Rugby, Boxing, and Karate.
                 </p>
               </div>
             </div>
@@ -166,7 +166,7 @@
             </div>
             <div class="detail-box">
               <p>
-                Location
+                Milele Guest House, Butula.
               </p>
             </div>
           </div>
@@ -190,7 +190,7 @@
             </div>
             <div class="detail-box">
               <p>
-                demo@gmail.com
+              info@polosgym.com
               </p>
             </div>
           </div>
@@ -205,7 +205,7 @@
   <footer class="container-fluid footer_section">
     <p>
       &copy; 2020 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
+      <a href="https://html.design/">Polos Gym ICT</a>
     </p>
   </footer>
   <!-- footer section -->

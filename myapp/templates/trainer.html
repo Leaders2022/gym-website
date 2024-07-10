@@ -13,13 +13,13 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Neogym</title>
+  <title>Polos Gym</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
@@ -35,9 +35,9 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{% url 'index' %}">
             <span>
-              Neogym
+            Polos Gym
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,21 +89,21 @@
           <div class="box">
             <div class="name">
               <h5>
-                Smirth Jon
+               Nijo
               </h5>
             </div>
             <div class="img-box">
-              <img src="images/t1.jpg" alt="">
+              <img src="{% static 'images/t1.jpg' %}" alt="">
             </div>
             <div class="social_box">
               <a href="">
-                <img src="images/facebook-logo.png" alt="">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="{% static 'images/twitter.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/instagram-logo.png" alt="">
+                <img src="{% static 'images/instagram-logo.png' %}" alt="">
               </a>
             </div>
           </div>
@@ -116,17 +116,17 @@
               </h5>
             </div>
             <div class="img-box">
-              <img src="images/t2.jpg" alt="">
+              <img src="{% static 'images/t2.jpg' %}" alt="">
             </div>
             <div class="social_box">
               <a href="">
-                <img src="images/facebook-logo.png" alt="">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="{% static 'images/twitter.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/instagram-logo.png" alt="">
+                <img src="{% static 'images/instagram-logo.png' %}" alt="">
               </a>
             </div>
           </div>
@@ -135,21 +135,21 @@
           <div class="box">
             <div class="name">
               <h5>
-                Alex Den
+               Paulo Natural
               </h5>
             </div>
             <div class="img-box">
-              <img src="images/t3.jpg" alt="">
+              <img src="{% static 'images/t3.jpg' %}" alt="">
             </div>
             <div class="social_box">
               <a href="">
-                <img src="images/facebook-logo.png" alt="">
+                <img src="{% static 'images/facebook-logo.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/twitter.png" alt="">
+                <img src="{% static 'images/twitter.png' %}" alt="">
               </a>
               <a href="">
-                <img src="images/instagram-logo.png" alt="">
+                <img src="{%  static 'images/instagram-logo.png' %}" alt="">
               </a>
             </div>
           </div>
@@ -171,7 +171,7 @@
             </div>
             <div class="detail-box">
               <p>
-                Location
+              Milele Guest House, Butula.
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@
             </div>
             <div class="detail-box">
               <p>
-                demo@gmail.com
+                info@polosgym.com
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@
   <footer class="container-fluid footer_section">
     <p>
       &copy; 2020 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
+      <a href="https://html.design/">Polos Gym ICT</a>
     </p>
   </footer>
   <!-- footer section -->
